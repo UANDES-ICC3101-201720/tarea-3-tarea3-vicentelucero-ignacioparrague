@@ -26,7 +26,7 @@ def recibir():
             break
         elif resp != "100" and resp != "Exit":
             sock2 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            server_address = ('192.168.50.28', 8000) 
+            server_address = (resp, 8000) 
             sock2.connect(server_address)
             print "connecting with: "+resp
             YN = "maybe"
